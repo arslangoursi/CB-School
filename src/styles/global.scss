@@ -26,6 +26,19 @@ body {
   align-items: center;
   justify-content: center;
 }
+
+.about__section {
+  display: flex;
+  flex-direction: column;
+
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 2em;
+  align-items: center;
+  justify-content: center;
+  background-color: #f8f9fb;
+}
+
 .header__section__content {
   display: flex;
   align-items: center;
@@ -299,6 +312,61 @@ body {
   color: white;
   border: 1px solid $primary-color;
 }
+.about__section__content {
+  display: flex;
+  flex-direction: column;
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 6em 0;
+}
+
+.about__section__top {
+  display: flex;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 2em 0;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.about__section__top__left {
+  display: flex;
+  width: 45%;
+  height: fit-content;
+}
+.about__section__top__left img {
+  width: 100%;
+}
+.about__section__top__right {
+  display: flex;
+  width: 45%;
+  flex-direction: column;
+  // justify-content: space-between;
+  // padding: 1em 0;
+}
+.about__section__top__right__title {
+  font-size: 12px;
+  font-weight: bold;
+  color: $primary-color;
+}
+.about__section__top__right__heading {
+  font-size: 50px;
+  font-weight: bold;
+  margin: 0.2em 0 0.5em;
+}
+.about__section__top__right__text {
+  font-size: 16px;
+  font-weight: 300;
+  color: #777777;
+  display: flex;
+  flex: 1;
+  align-items: center;
+  margin: 1.5em 0;
+}
 
 //--------------------------------------------------------------------Responsive
 
@@ -327,6 +395,15 @@ body {
   }
   .feature__section__content {
     align-items: center;
+  }
+  .about__section__top__right__heading {
+    font-size: 40px;
+  }
+  .about__section__top__right {
+    width: 48%;
+  }
+  .about__section__top__left {
+    width: 45%;
   }
 }
 
@@ -423,6 +500,18 @@ body {
   .growth__section__text__subheading {
     margin-bottom: 2em;
   }
+  .about__section__top {
+    flex-direction: column;
+    text-align: center;
+  }
+  .about__section__top__left {
+    width: 100%;
+  }
+  .about__section__top__right {
+    align-items: center;
+    margin-top: 3em;
+    width: 100%;
+  }
 }
 
 @media (max-width: 660px) {
@@ -502,6 +591,15 @@ body {
   }
   .growth__section__content img {
     right: 200px;
+  }
+  .about__section__top__right__heading {
+    font-size: 36px;
+  }
+  .about__section__top__right__text {
+    font-size: 14px;
+  }
+  .about__section__content {
+    padding: 3em 0;
   }
 }
 @media (max-width: 500px) {

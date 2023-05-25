@@ -2,6 +2,7 @@ import Navbar from "../components/Navbar";
 import Header from "../components/Header";
 import Features from "../components/Features";
 import Growth from "../components/Growth";
+import About from "../components/About";
 
 export default function Index() {
   return (
@@ -13,6 +14,7 @@ export default function Index() {
       <div className="dark__background"></div>
       <Features />
       <Growth />
+      <About />
     </>
   );
 }
