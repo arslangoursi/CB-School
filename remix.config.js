@@ -4,9 +4,9 @@ export const config = {
   progressiveWebApp: false,
   imagesOptimization: false,
   alias: [
-    // {
-    //   find: "@somefolder",
-    //   replacement: "/src/somefolder",
-    // },
+    {
+      find: "@constants",
+      replacement: "/src/constants",
+    },
   ],
 };

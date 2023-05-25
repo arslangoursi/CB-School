@@ -7,7 +7,7 @@ $dark-color: #0c1e3c;
 *::before {
   box-sizing: border-box;
   scroll-behavior: smooth;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Plus Jakarta Sans", sans-serif;
 }
 body {
   margin: 0;
@@ -20,7 +20,7 @@ body {
 .pricing__section {
   display: flex;
   flex-direction: column;
-  max-width: 1440px;
+  max-width: 1600px;
   width: 100%;
   margin: 0 auto;
   padding: 0 4em;
