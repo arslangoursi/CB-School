@@ -250,11 +250,19 @@ body {
 .growth__section__content {
   background-color: $dark-color;
   width: 100%;
-  margin: 3em 0;
+  margin: 5em 0;
   border-radius: 20px;
   color: white;
   padding: 4em;
   display: flex;
+  position: relative;
+  justify-content: space-between;
+  align-items: center;
+}
+.growth__section__content img {
+  position: absolute;
+  top: 0;
+  right: 300px;
 }
 .growth__section__text {
   width: 550px;
@@ -269,6 +277,27 @@ body {
   font-weight: 300;
   color: rgba(255, 255, 255, 0.674);
   line-height: 18px;
+}
+.growth__section__btn {
+  width: fit-content;
+  height: fit-content;
+  display: flex;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 1em 2em;
+  background-color: $primary-color;
+  border: 1px solid transparent;
+  color: white;
+  border-radius: 50px;
+  margin-right: 1em;
+  cursor: pointer;
+  border: 1px solid transparent;
+}
+.growth__section__btn:hover {
+  background-color: transparent;
+
+  color: white;
+  border: 1px solid $primary-color;
 }
 
 //--------------------------------------------------------------------Responsive
@@ -382,6 +411,18 @@ body {
   .dark__background {
     height: 700px;
   }
+  .growth__section__content {
+    flex-direction: column;
+  }
+
+  .growth__section__text {
+    width: 80%;
+    text-align: center;
+  }
+
+  .growth__section__text__subheading {
+    margin-bottom: 2em;
+  }
 }
 
 @media (max-width: 660px) {
@@ -419,11 +460,9 @@ body {
   .feature__section__card {
     width: 80%;
   }
-  .dark__background {
-    margin-top: -250px;
-  }
+
   .feature__section__content {
-    margin-top: -350px;
+    margin-top: -400px;
   }
   .feature__section__subheading {
     font-size: 12px;
@@ -431,6 +470,7 @@ body {
 
   .dark__background {
     height: 600px;
+    margin-top: -250px;
   }
 
   .feature__section__cards__entry {
@@ -448,6 +488,20 @@ body {
   }
   .feature__section__card {
     height: 400px;
+  }
+  .growth__section__text {
+    width: 100%;
+    text-align: center;
+  }
+  .growth__section__text__heading {
+    font-size: 32px;
+  }
+  .growth__section__text__subheading {
+    font-size: 12px;
+    margin-bottom: 2em;
+  }
+  .growth__section__content img {
+    right: 200px;
   }
 }
 @media (max-width: 500px) {
@@ -485,11 +539,14 @@ body {
     width: 100%;
   }
   .feature__section__content {
-    margin-top: -400px;
+    margin-top: -420px;
   }
 }
 @media (max-width: 400px) {
   .dark__background {
     margin-top: -200px;
+  }
+  .feature__section__content {
+    margin-top: -450px;
   }
 }
