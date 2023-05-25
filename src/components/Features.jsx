@@ -1,4 +1,3 @@
-import React from "react";
 import WhiteArrow from "../assets/whiteArrow.svg";
 import CardImage from "../assets/cardImage.png";
 import BlueArrow from "../assets/blueArrow.svg";

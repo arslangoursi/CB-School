@@ -1,8 +1,8 @@
-import Navbar from "../components/Navbar";
-import Header from "../components/Header";
+import About from "../components/About";
 import Features from "../components/Features";
 import Growth from "../components/Growth";
-import About from "../components/About";
+import Header from "../components/Header";
+import Navbar from "../components/Navbar";
 import PricingBlueTick from "../assets/pricingBlueTick.svg";
 
 export default function Index() {

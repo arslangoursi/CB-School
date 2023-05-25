@@ -1,5 +1,5 @@
-import React from "react";
 import GrowthCircle from "../assets/growthCircle.svg";
+
 export default function Growth() {
   return (
     <div className="growth__section">

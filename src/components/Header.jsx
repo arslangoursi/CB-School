@@ -1,6 +1,5 @@
-import React from "react";
-import Stars from "../assets/stars.svg";
 import HeroImage from "../assets/hero img.png";
+import Stars from "../assets/stars.svg";
 
 export default function Header() {
   return (
