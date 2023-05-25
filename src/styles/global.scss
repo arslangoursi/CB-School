@@ -16,13 +16,14 @@ body {
 }
 .header__section,
 .feature__section,
-.growth__section {
+.growth__section,
+.pricing__section {
   display: flex;
   flex-direction: column;
   max-width: 1440px;
   width: 100%;
   margin: 0 auto;
-  padding: 0 2em;
+  padding: 0 4em;
   align-items: center;
   justify-content: center;
 }
@@ -33,7 +34,7 @@ body {
 
   width: 100%;
   margin: 0 auto;
-  padding: 0 2em;
+  padding: 0 4em;
   align-items: center;
   justify-content: center;
   background-color: #f8f9fb;
@@ -367,6 +368,55 @@ body {
   align-items: center;
   margin: 1.5em 0;
 }
+.pricing__section__text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 5em 0 3em;
+}
+.pricing__section__text__heading {
+  font-size: 36px;
+  font-weight: bold;
+  max-width: 700px;
+}
+.pricing__section__text__subheading {
+  font-size: 14px;
+  color: #272727;
+  margin-top: 2em;
+  max-width: 500px;
+}
+.pricing__section__cards {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+.pricing__section__card {
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+}
+.pricing__section__card__heading {
+  font-size: 46px;
+  font-weight: bolder;
+  margin: 1em 0;
+  color: #231d4f;
+}
+.pricing__section__card__title {
+  font-size: 36px;
+  color: #231d4f;
+}
+.pricing__section__card__text {
+  font-size: 18px;
+  color: #848199;
+  margin: 1em 0;
+}
+.pricing__section__card__point {
+  font-size: 18px;
+  color: #848199;
+  display: flex;
+}
 
 //--------------------------------------------------------------------Responsive
 
@@ -406,7 +456,6 @@ body {
     width: 45%;
   }
 }
-
 @media (max-width: 945px) {
   .header__menu {
     display: flex;
@@ -512,8 +561,13 @@ body {
     margin-top: 3em;
     width: 100%;
   }
+  .header__section,
+  .feature__section,
+  .growth__section,
+  .about__section {
+    padding: 0 2em;
+  }
 }
-
 @media (max-width: 660px) {
   .hero__section__content__left {
     width: 90%;
@@ -600,6 +654,12 @@ body {
   }
   .about__section__content {
     padding: 3em 0;
+  }
+  .pricing__section__text__heading {
+    font-size: 32px;
+  }
+  .pricing__section__text__subheading {
+    font-size: 14px;
   }
 }
 @media (max-width: 500px) {
