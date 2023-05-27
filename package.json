@@ -9,7 +9,9 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "chart.js": "^4.3.0",
     "react": "^18.2.0",
+    "react-chartjs-2": "^5.2.0",
     "react-click-away-listener": "^2.2.3",
     "react-dom": "^18.2.0",
     "react-helmet": "^6.1.0",
