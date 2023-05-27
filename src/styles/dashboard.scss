@@ -61,6 +61,7 @@ a:hover,
 }
 .container__sidebar__content .active span {
   color: #272769;
+  font-weight: bold;
 }
 .container__sidebar__content__entry {
   width: 100%;
@@ -107,4 +108,26 @@ a:hover,
 .container__dashboard__main {
   flex: 1;
   height: 100%;
+}
+.container__dashboard__main__stats {
+  display: flex;
+  margin-bottom: 2em;
+}
+.container__dashboard__main__stats__entry {
+  flex: 1;
+  height: 120px;
+  max-width: 350px;
+  border-radius: 10px;
+  margin-right: 1em;
+  padding: 1.5em;
+}
+.container__dashboard__main__stats__entry__heading {
+  font-size: 1rem;
+  margin-bottom: 0.5em;
+  color: white;
+}
+.container__dashboard__main__stats__entry__value {
+  font-size: 2rem;
+  font-weight: bold;
+  color: white;
 }

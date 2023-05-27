@@ -7,7 +7,11 @@ import { moduels } from "@constants/moduels";
 export default function Sidebar() {
   return (
     <div className="container__sidebar">
-      <Link to="/dashboard" className="container__sidebar__logo">
+      <Link
+        to="/dashboard"
+        state={{ name: "Dashboard" }}
+        className="container__sidebar__logo"
+      >
         <Logo />
       </Link>
       <div className="container__sidebar__content">
