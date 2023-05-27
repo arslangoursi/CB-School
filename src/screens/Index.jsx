@@ -4,6 +4,7 @@ import Growth from "../components/Growth";
 import Header from "../components/Header";
 import Navbar from "../components/Navbar";
 import Pricing from "../components/Pricing";
+import Footer from "../components/Footer";
 
 export default function Index() {
   return (
@@ -17,6 +18,7 @@ export default function Index() {
       <Growth />
       <About />
       <Pricing />
+      <Footer />
     </>
   );
 }

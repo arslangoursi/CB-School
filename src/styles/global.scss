@@ -483,6 +483,84 @@ body {
   border: 1px solid white;
   color: white;
 }
+.dark__background__footer {
+  width: 100%;
+  margin-top: 5em;
+  position: relative;
+  height: fit-content;
+}
+.dark__background__footer img {
+  width: 100%;
+  min-height: 100%;
+  position: absolute;
+}
+.footer__content {
+  display: flex;
+  flex-direction: column;
+  max-width: 1200;
+  padding: 4em;
+  justify-content: center;
+  align-items: center;
+}
+.footer__content__logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 6em 0 0;
+}
+.footer__content__logo img {
+  width: 200px;
+}
+.footer__content__text {
+  display: flex;
+  justify-content: space-between;
+  margin: 10em 0 7.4em;
+  color: white;
+  position: relative;
+  width: 100%;
+  max-width: 700px;
+  gap: 1em;
+  flex-wrap: wrap;
+}
+.footer__content__text__link {
+  display: flex;
+  flex-direction: column;
+  max-width: 200px;
+}
+.footer__content__text__link__heading {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 2em;
+}
+.footer__content__text__link__link {
+  font-size: 16px;
+  font-weight: 400;
+  opacity: 0.7;
+  margin-bottom: 1em;
+  width: 100%;
+  display: flex;
+}
+.footer__content__text__link__link img {
+  position: relative;
+  display: flex;
+  width: 20px;
+  margin-right: 1em;
+}
+.footer__content__social {
+  display: flex;
+  border-top: 1px solid rgba(255, 255, 255, 0.368);
+  padding: 2em;
+  position: relative;
+  width: 90%;
+  max-width: 1000px;
+  align-items: center;
+  justify-content: center;
+}
+.footer__content__social svg {
+  width: 25px;
+  margin: 0 1em;
+  position: relative;
+}
 
 //--------------------------------------------------------------------Responsive
 
@@ -639,6 +717,13 @@ body {
   .pricing__section {
     padding: 0 2em;
   }
+  .dark__background__footer {
+    overflow: hidden;
+  }
+  .dark__background__footer > img {
+    width: 200%;
+    margin-left: -50%;
+  }
 }
 @media (max-width: 660px) {
   .hero__section__content__left {
@@ -733,6 +818,9 @@ body {
   .pricing__section__text__subheading {
     font-size: 14px;
   }
+  // .footer__content__text {
+  //   flex-direction: column;
+  // }
 }
 @media (max-width: 500px) {
   .login__btn {
@@ -778,5 +866,8 @@ body {
   }
   .feature__section__content {
     margin-top: -450px;
+  }
+  .growth__section__btn {
+    font-size: 12px;
   }
 }
