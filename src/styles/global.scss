@@ -26,6 +26,7 @@ body {
   padding: 0 4em;
   align-items: center;
   justify-content: center;
+  font-family: "Montserrat", sans-serif;
 }
 
 .about__section {
@@ -38,6 +39,7 @@ body {
   align-items: center;
   justify-content: center;
   background-color: #f8f9fb;
+  font-family: "Montserrat", sans-serif;
 }
 
 .header__section__content {
@@ -87,7 +89,7 @@ body {
   display: flex;
   width: 40%;
   font-size: 50px;
-  font-weight: bolder;
+  font-weight: 800;
 }
 .hero__section__content__right {
   display: flex;
@@ -208,7 +210,7 @@ body {
   padding: 3em 1em;
   border-radius: 20px;
   font-size: 42px;
-  font-weight: bold;
+  font-weight: 900;
   text-align: center;
   justify-content: center;
   align-items: center;
@@ -230,6 +232,7 @@ body {
   color: #000000;
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 .feature__section__card__img img {
   width: 100%;
@@ -244,6 +247,7 @@ body {
   font-size: 26px;
   font-weight: bold;
   margin: 1em 0;
+  max-width: 350px;
 }
 .feature__section__card__subheading {
   font-size: 14px;
@@ -257,8 +261,15 @@ body {
   font-weight: 700;
   display: flex;
   justify-content: space-between;
+  width: 100%;
+  align-items: center;
 }
-.feature__section__card__btn img {
+.feature__section__card__btn__read {
+  display: flex;
+  flex: 1;
+  width: 100%;
+}
+.feature__section__card__btn__img img {
   width: 30px;
 }
 .growth__section__content {
@@ -283,7 +294,7 @@ body {
 }
 .growth__section__text__heading {
   font-size: 36px;
-  font-weight: bold;
+  font-weight: 900;
   margin-bottom: 1em;
 }
 .growth__section__text__subheading {
@@ -316,7 +327,7 @@ body {
 .about__section__content {
   display: flex;
   flex-direction: column;
-  max-width: 1440px;
+  max-width: 1600px;
   width: 100%;
   margin: 0 auto;
   display: flex;
@@ -356,8 +367,10 @@ body {
 }
 .about__section__top__right__heading {
   font-size: 50px;
-  font-weight: bold;
+  font-weight: 900;
   margin: 0.2em 0 0.5em;
+  max-width: 500px;
+  width: 100%;
 }
 .about__section__top__right__text {
   font-size: 16px;
@@ -374,11 +387,11 @@ body {
   justify-content: center;
   align-items: center;
   text-align: center;
-  margin: 5em 0 3em;
+  margin: 8em 0 6em;
 }
 .pricing__section__text__heading {
-  font-size: 36px;
-  font-weight: bold;
+  font-size: 40px;
+  font-weight: 900;
   max-width: 700px;
 }
 .pricing__section__text__subheading {
@@ -391,31 +404,84 @@ body {
   display: flex;
   width: 100%;
   justify-content: center;
+  gap: 1em;
+  flex-wrap: wrap;
+  margin-bottom: 7em;
 }
 .pricing__section__card {
   display: flex;
   flex-direction: column;
-  width: 25%;
+  width: 330px;
+  height: 550px;
+  padding: 4em 2em 2em;
 }
 .pricing__section__card__heading {
   font-size: 46px;
-  font-weight: bolder;
-  margin: 1em 0;
+  font-weight: 900;
+  margin-bottom: 0.8em;
   color: #231d4f;
+}
+.pricing__section__card__heading span {
+  color: rgba(132, 129, 153, 1);
+  font-size: 18px;
+  font-weight: 500;
 }
 .pricing__section__card__title {
   font-size: 36px;
   color: #231d4f;
+  font-weight: 600;
 }
 .pricing__section__card__text {
   font-size: 18px;
   color: #848199;
   margin: 1em 0;
+  font-weight: 500;
+}
+.pricing__section__card__points {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  font-weight: 500;
 }
 .pricing__section__card__point {
   font-size: 18px;
   color: #848199;
   display: flex;
+  margin-bottom: 0.5em;
+}
+.pricing__section__card__point img {
+  width: 22px;
+  margin-right: 0.5em;
+}
+.pricing__section__card__btn {
+  width: 1005;
+  color: white;
+  background-color: $primary-color;
+  padding: 0.7em 3em;
+  border-radius: 50px;
+  border: 1px solid transparent;
+  font-size: 18px;
+  cursor: pointer;
+}
+.pricing__section__card__btn:hover {
+  background-color: transparent;
+  border: 1px solid $primary-color;
+  color: $primary-color;
+}
+.pricing__section__card__btn__popular {
+  width: 1005;
+  color: white;
+  background-color: $secondry-color;
+  padding: 0.7em 3em;
+  border-radius: 50px;
+  border: 1px solid transparent;
+  font-size: 18px;
+  cursor: pointer;
+}
+.pricing__section__card__btn__popular:hover {
+  background-color: transparent;
+  border: 1px solid white;
+  color: white;
 }
 
 //--------------------------------------------------------------------Responsive
@@ -454,6 +520,11 @@ body {
   }
   .about__section__top__left {
     width: 45%;
+  }
+  .pricing__section__card {
+    background-color: #ededed;
+    border-radius: 30px;
+    margin-bottom: 1em;
   }
 }
 @media (max-width: 945px) {
@@ -564,7 +635,8 @@ body {
   .header__section,
   .feature__section,
   .growth__section,
-  .about__section {
+  .about__section,
+  .pricing__section {
     padding: 0 2em;
   }
 }

@@ -29,8 +29,12 @@ export default function Features() {
                 response to identify, manage and care for new cases of COVID-19.{" "}
               </div>
               <div className="feature__section__card__btn">
-                Read more
-                <img src={BlueArrow} alt="arrow"></img>
+                <div className="feature__section__card__btn__read">
+                  Read more
+                </div>
+                <div className="feature__section__card__btn__img">
+                  <img src={BlueArrow} alt="arrow"></img>
+                </div>
               </div>
             </div>
             <div className="feature__section__card">
