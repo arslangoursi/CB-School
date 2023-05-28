@@ -1,5 +1,6 @@
 import HeroImage from "../assets/hero img.png";
 import Stars from "../assets/stars.svg";
+import Fade from "react-reveal/Fade";
 
 export default function Header() {
   return (
@@ -16,6 +17,7 @@ export default function Header() {
           <span className="hero__section__content__right__line"></span>
         </div>
       </div>
+
       <div className="hero__section__btn">
         <div className="hero__section__btn__left">
           <button className="hero__section__singup">Signup now</button>
@@ -32,9 +34,11 @@ export default function Header() {
           </div>
         </div>
       </div>
-      <div className="hero__section__img">
-        <img src={HeroImage} alt="hero image"></img>
-      </div>
+      <Fade bottom>
+        <div className="hero__section__img">
+          <img src={HeroImage} alt="hero image"></img>
+        </div>
+      </Fade>
     </>
   );
 }

@@ -13,7 +13,9 @@ export default function Index() {
         <Navbar />
         <Header />
       </div>
+
       <div className="dark__background"></div>
+
       <Features />
       <Growth />
       <About />
