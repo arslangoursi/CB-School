@@ -4,6 +4,7 @@ import Whatsapp from "../assets/whatsapp.svg";
 import Call from "../assets/call.svg";
 import Mail from "../assets/mail.svg";
 import Fade from "react-reveal/Fade";
+import { Link } from "react-router-dom";
 
 export default function Footer() {
   return (
@@ -35,27 +36,29 @@ export default function Footer() {
 
             <div className="footer__content__text__link">
               <div className="footer__content__text__link__heading">Links</div>
-              <div className="footer__content__text__link__link">Home</div>
-              <div className="footer__content__text__link__link">About</div>
-              <div className="footer__content__text__link__link">Features</div>
-              <div className="footer__content__text__link__link">Pricing</div>
+              <Link className="footer__content__text__link__link">Home</Link>
+              <Link className="footer__content__text__link__link">About</Link>
+              <Link className="footer__content__text__link__link">
+                Features
+              </Link>
+              <Link className="footer__content__text__link__link">Pricing</Link>
             </div>
             <div className="footer__content__text__link">
               <div className="footer__content__text__link__heading">
                 Contact
               </div>
-              <div className="footer__content__text__link__link">
+              <Link className="footer__content__text__link__link">
                 <img src={Call} />
                 0335-6226026
-              </div>
-              <div className="footer__content__text__link__link">
+              </Link>
+              <Link className="footer__content__text__link__link">
                 <img src={Whatsapp} />
                 whatsapp
-              </div>
-              <div className="footer__content__text__link__link">
+              </Link>
+              <Link className="footer__content__text__link__link">
                 <img src={Mail} />
                 Hammadhabib@gmail.com
-              </div>
+              </Link>
             </div>
           </div>
         </Fade>

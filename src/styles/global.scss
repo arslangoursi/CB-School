@@ -14,7 +14,19 @@ body {
   padding: 0;
   font-size: 16px;
 }
-.header__section,
+.header__section {
+  display: flex;
+  flex-direction: column;
+  max-width: 1600px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 4em;
+  align-items: center;
+  justify-content: center;
+  font-family: "Montserrat", sans-serif;
+  min-height: 100vh;
+}
+
 .feature__section,
 .growth__section,
 .pricing__section {
@@ -28,7 +40,6 @@ body {
   justify-content: center;
   font-family: "Montserrat", sans-serif;
 }
-
 .about__section {
   display: flex;
   flex-direction: column;
@@ -167,6 +178,7 @@ body {
 .hero__section__img img {
   width: 100%;
   margin: 5em 0 7em;
+  min-height: 800px;
 }
 .dark__background {
   background-color: $dark-color;
@@ -526,6 +538,8 @@ body {
   display: flex;
   flex-direction: column;
   max-width: 200px;
+  text-decoration: none;
+  color: white;
 }
 .footer__content__text__link__heading {
   font-size: 16px;
@@ -539,6 +553,11 @@ body {
   margin-bottom: 1em;
   width: 100%;
   display: flex;
+  color: white;
+  text-decoration: none;
+}
+.footer__content__text__link__link:hover {
+  color: $secondry-color;
 }
 .footer__content__text__link__link img {
   position: relative;

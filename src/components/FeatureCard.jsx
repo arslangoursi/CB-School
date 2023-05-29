@@ -1,9 +1,9 @@
 import BlueArrow from "../assets/blueArrow.svg";
-import LightSpeed from "react-reveal/LightSpeed";
+import Fade from "react-reveal/Fade";
 
 export default function FeatureCard({ heading, text, image }) {
   return (
-    <LightSpeed right>
+    <Fade bottom>
       <div className="feature__section__card">
         <div className="feature__section__card__img">
           <img src={image} alt="image"></img>
@@ -18,6 +18,6 @@ export default function FeatureCard({ heading, text, image }) {
           </div>
         </div>
       </div>
-    </LightSpeed>
+    </Fade>
   );
 }

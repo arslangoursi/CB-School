@@ -3,10 +3,22 @@ import CardImage from "../assets/cardImage.png";
 import FeatureCard from "../components/FeatureCard";
 import LightSpeed from "react-reveal/LightSpeed";
 import Fade from "react-reveal/Fade";
+import React, { useState, useEffect } from "react";
 
 export default function Features() {
+  // const [showDiv, setShowDiv] = useState(false);
+
+  // useEffect(() => {
+  //   // Simulate an asynchronous operation
+  //   setTimeout(() => {
+  //     setShowDiv(true);
+  //   }, 2000); // Delay for 2 seconds
+  // }, []);
   return (
     <>
+      {/* {showDiv && (
+        <div> */}
+      <div className="dark__background"></div>
       <div className="feature__section">
         <div className="feature__section__content">
           <div className="feature__section__subheading">
@@ -17,11 +29,12 @@ export default function Features() {
           </div>
 
           <div className="feature__section__cards">
-            <div className="feature__section__cards__entry">
-              To batter understand what project is manage
-              <img src={WhiteArrow}></img>
-            </div>
-
+            <Fade bottom>
+              <div className="feature__section__cards__entry">
+                To batter understand what project is manage
+                <img src={WhiteArrow}></img>
+              </div>
+            </Fade>
             <FeatureCard
               heading="Project Management Life cycle"
               text="   All countries should increase their level of prepare, alert
@@ -60,6 +73,8 @@ export default function Features() {
           </div>
         </div>
       </div>
+      {/* </div>
+      )} */}
     </>
   );
 }
