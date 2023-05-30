@@ -57,7 +57,7 @@ export default function Navbar() {
         </ClickAwayListener>
       ) : null}
       <div className="header__section__right">
-        <Link to="" className="login__btn">
+        <Link to="/Dashboard" className="login__btn">
           Login
         </Link>
       </div>

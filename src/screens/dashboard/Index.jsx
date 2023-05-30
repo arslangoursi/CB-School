@@ -10,6 +10,7 @@ import {
 } from "chart.js";
 
 import Breadcrumbs from "@components/Breadcrumbs";
+import RightSidebar from "@components/RightSidebar";
 import { Line } from "react-chartjs-2";
 import React from "react";
 import StatsFees from "@assets/StatsFees.svg";
@@ -24,7 +25,7 @@ export default function Dashboard() {
         <Stats />
         <StatsChat />
       </div>
-      <div className="container__dashboard__sidebar"></div>
+      <RightSidebar />
     </div>
   );
 }
