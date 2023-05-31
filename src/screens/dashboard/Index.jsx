@@ -11,6 +11,7 @@ import {
 
 import Breadcrumbs from "@components/Breadcrumbs";
 import RightSidebar from "@components/RightSidebar";
+import SubmitFee from "@components/SubmitFee";
 import { Line } from "react-chartjs-2";
 import React from "react";
 import StatsFees from "@assets/StatsFees.svg";
@@ -24,6 +25,7 @@ export default function Dashboard() {
         <Breadcrumbs />
         <Stats />
         <StatsChat />
+        <SubmitFee />
       </div>
       <RightSidebar />
     </div>

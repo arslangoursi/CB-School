@@ -103,7 +103,7 @@ export default function () {
               className="doughnut__wrapper__chart"
               options={options}
               data={data}
-              backgroundColor="black"
+              // backgroundColor="black"
             />
           </div>
         </div>
@@ -118,14 +118,14 @@ export default function () {
               className="doughnut__wrapper"
               style={{
                 width: "100%",
-                maxWidth: "70px",
+                maxWidth: "60px",
               }}
             >
               <Doughnut
                 className="doughnut__wrapper__chart"
                 options={options}
                 data={data}
-                backgroundColor="black"
+                // backgroundColor="black"
               />
             </div>
           </div>
@@ -144,14 +144,14 @@ export default function () {
               className="doughnut__wrapper"
               style={{
                 width: "100%",
-                maxWidth: "70px",
+                maxWidth: "60px",
               }}
             >
               <Doughnut
                 className="doughnut__wrapper__chart"
                 options={options}
                 data={data}
-                backgroundColor="black"
+                // backgroundColor="black"
               />
             </div>
           </div>
@@ -189,7 +189,35 @@ export default function () {
             Notifications
           </div>
         </div>
-        <div className="container__dashboard__sidebar__notification__content"></div>
+        <div className="container__dashboard__sidebar__notification__content">
+          <div
+            className="container__dashboard__sidebar__notification__content__entry"
+            style={{ background: "#FC7B72" }}
+          >
+            <div
+              className="container__dashboard__sidebar__notification__content__entry__heading"
+              style={{ color: "white" }}
+            >
+              Notification Heading
+            </div>
+            <div
+              className="container__dashboard__sidebar__notification__content__entry__content"
+              style={{ color: "white" }}
+            >
+              Lorem ipsum dolor sit amet. Ut laudantium adipisci et animi
+              dolorum et neque error aut maxime nesciunt.
+            </div>
+          </div>
+          <div className="container__dashboard__sidebar__notification__content__entry">
+            <div className="container__dashboard__sidebar__notification__content__entry__heading">
+              Notification Heading
+            </div>
+            <div className="container__dashboard__sidebar__notification__content__entry__content">
+              Lorem ipsum dolor sit amet. Ut laudantium adipisci et animi
+              dolorum et neque error aut maxime nesciunt.
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );

@@ -238,7 +238,7 @@ a:hover,
 .container__dashboard__sidebar__balance__pending {
   display: flex;
   width: 100%;
-  padding: 0 1em;
+  padding: 0 2em;
   flex-direction: column;
 }
 .container__dashboard__sidebar__balance__pending__entry {
@@ -271,10 +271,167 @@ a:hover,
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  align-items: flex-start;
+  align-items: left;
+  width: 100%;
+  padding: 0 2em;
 }
 .container__dashboard__sidebar__notification__header {
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
+  padding: 0 0 1em;
+}
+.container__dashboard__sidebar__notification__header__icon {
+  display: flex;
+  margin-right: 10px;
+}
+.container__dashboard__sidebar__notification__header__heading {
+  font-size: 20px;
+  font-weight: bold;
+  color: $dark-color;
+}
+.container__dashboard__sidebar__notification__content {
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  height: 200px;
+  // padding: 0 0.5em 0 0;
+}
+.container__dashboard__sidebar__notification__content::-webkit-scrollbar {
+  width: 5px;
+}
+
+.container__dashboard__sidebar__notification__content::-webkit-scrollbar-thumb {
+  background: transparent;
+}
+
+.container__dashboard__sidebar__notification__content__entry {
+  display: flex;
+  flex-direction: column;
+  padding: 1em;
+  background-color: #fafafa;
+  border-radius: 15px;
+  margin-bottom: 1em;
+}
+.container__dashboard__sidebar__notification__content__entry__heading {
+  font: 14px;
+  font-weight: bold;
+  color: $dark-color;
+  padding: 0.5em 0;
+}
+.container__dashboard__sidebar__notification__content__entry__content {
+  font-size: 12px;
+  color: rgba(34, 42, 90, 0.44);
+}
+.submit__fee__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+  background-color: white;
+  border-radius: 10px;
+  padding: 2em;
+  width: 100%;
+  margin-top: 2em;
+  height: 400px;
+  // flex-direction: column;
+}
+.submit__fee__container__header {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+  margin-bottom: 2em;
+}
+.submit__fee__container__header__heading {
+  display: flex;
+  font-size: 26px;
+  font-weight: 900;
+  color: $dark-color;
+}
+.submit__fee__container__header__search {
+  display: flex;
+  background-color: #f9f9f9;
+  padding: 1em 1.5em;
+  border-radius: 35px;
+  font-size: 14px;
+  width: 100%;
+  max-width: 350px;
+}
+.submit__fee__container__header__search svg {
+  margin-right: 1em;
+}
+.submit__fee__container__header__search input {
+  border: none;
+  background-color: transparent;
+  width: fit-content;
+  outline: none;
+  width: 100%;
+}
+.submit__fee__container__header__search input::placeholder {
+  color: #c5c5c5;
+}
+.submit__fee__container__table {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.submit__fee__container__table__header {
+  display: flex;
+  // justify-content: space-between;
+  align-items: center;
+  padding: 0 1em 1em 1em;
+}
+.submit__fee__container__table__header__entry {
+  color: #222a5a;
+  font-size: 14px;
+  font-weight: bold;
+  max-width: 170px;
+  width: 100%;
+  padding: 0 0.7em;
+}
+.submit__fee__container__table__list {
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  height: 230px;
+  padding: 0 1em;
+  // justify-content: space-between;
+  width: calc(100% + 5px);
+}
+.submit__fee__container__table__list::-webkit-scrollbar {
+  width: 5px;
+}
+
+.submit__fee__container__table__list::-webkit-scrollbar-thumb {
+  background: $secondry-color;
+  border-radius: 50px;
+}
+
+.submit__fee__container__table__list::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+.submit__fee__container__table__list__list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.3em 0;
+  cursor: pointer;
+}
+.submit__fee__container__table__list__list:hover {
+  background-color: $primary-color;
+  color: white;
+  border-radius: 50px;
+}
+.submit__fee__container__table__list__entry {
+  color: #313177;
+  font-size: 12px;
+  font-weight: 500;
+  max-width: 170px;
+  width: 100%;
+  padding: 0 0.7em;
+}
+.submit__fee__container__table__list__list:hover
+  .submit__fee__container__table__list__entry {
+  color: white;
 }
